@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Fabio Daniel Rossi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: #1a4e7e;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        h2 {
+            color: #1a4e7e;
+            border-bottom: 2px solid #1a4e7e;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .contacto, .perfil, .info-adicional {
+            font-style: italic;
+        }
+        .experiencia-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #ccc;
+        }
+        .experiencia-item h3 {
+            margin: 0 0 5px 0;
+            color: #555;
+        }
+        .experiencia-item span {
+            display: block;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .tecnologias {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        /* NUEVAS REGLAS PARA LA FOTO */
+        .foto-perfil {
+            width: 100px; /* Tamaño del ancho de la foto */
+            height: 100px; /* Tamaño de la altura de la foto */
+            border-radius: 50%; /* Esto la hace circular */
+            border: 3px solid white; /* Borde blanco alrededor */
+            position: absolute; /* Permite posicionamiento libre */
+            top: 20px; /* Distancia desde el borde superior */
+            left: 20px; /* Distancia desde el borde izquierdo */
+        }
+
+        /* Ajuste para el header, debe ser relativo para que la foto se posicione bien */
+        header {
+            background: #1a4e7e;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: relative; /* CRUCIAL: Necesario para posicionar la foto */
+        }
+
+            /* Ajuste para que el título no tape la foto */
+            header h1 {
+                margin: 0;
+                font-size: 2em;
+                margin-left: 100px; /* Mueve el título a la derecha para dejar espacio para la foto */
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="piloto.png" alt="Foto de perfil de Fabio Rossi" class="foto-perfil">
+
+        <h1>Fabio Daniel Rossi</h1>
+        <nav>
+            <ul>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+<!-- 
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <div class="contacto">
+                <p>Teléfono: +54 9 341 5190637 [cite: 5]</p>
+                <p>Correo electrónico: fabio_d_rossi@hotmail.com [cite: 6]</p>
+            </div>
+     
+        </section>
+              comentario -->
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <div class="perfil">
+                <p>Más de 30 años desarrollando software. Apasionado de la tecnología, en busca constante de nuevos proyectos. [cite: 8]</p>
+            </div>
+        </section>
+
+        <section id="conocimientos">
+            <h2>Conocimientos</h2>
+            <ul>
+                <li>ASP Clásico [cite: 10]</li>
+                <li>Visual Basic 6, Visual Fox Pro [cite: 11]</li>
+                <li>Visual Studio .NET Core (Win Forms, Web Forms, Web Services) </li>
+                <li>SQL Server y MySQL [cite: 13]</li>
+                <li>Windows Server, IIS, AWS y Google Cloud [cite: 14]</li>
+                <li>Android Studio (Java) [cite: 15]</li>
+                <li>GIT, TFS [cite: 16]</li>
+                <li>APIs: WhatsApp, Telegram, AFIP, WooComerce, Wit.Ai, Clash Royale </li>
+            </ul>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+
+            <div class="experiencia-item">
+                <h3>Cinestar. (12/2024-12/2024) [cite: 27]</h3>
+                <p>Actualizaciones varias en sistema de software orientado a la industria del entretenimiento. [cite: 28]</p>
+                <span class="tecnologias">Tecnologías: VB6, VB.NET, SQL Server [cite: 29]</span>
+                <span>Web: www.cinestarsoftware.com [cite: 30]</span>
+            </div>
+
+            <div class="experiencia-item">
+                <h3>Logikom. (10/2024 - 11/2024) [cite: 31]</h3>
+                <p>Integración de sistema de gestión comercial con Woocommerce. [cite: 32]</p>
+                <span class="tecnologias">Tecnologías: VB6, API RetsFull [cite: 33]</span>
+                <span>Web: www.logikom.com [cite: 34]</span>
+            </div>
+
+            <div class="experiencia-item">
+                <h3>Abner (9/2024 - 9/2024) [cite: 35]</h3>
+                <p>Desarrollo bot para web scraping de cuentas de tiktoks. [cite: 36]</p>
+                <span class="tecnologias">Tecnologías: C#.NET Core, Selenium [cite: 37]</span>
+            </div>
+
+            <div class="experiencia-item">
+                <h3>Verde Vida S.A. (06/2018-03/2021) [cite: 48]</h3>
+                <p>Desarrollo y puesta en marcha de sistema de foto multas, captura de imágenes y geoposición de inspectores en Android. Administración y consultas desde sitio web. [cite: 49, 54]</p>
+                <span class="tecnologias">Tecnologías: Visual Studio .NET Win Forms, Web Forms, Web Services, SQL Server [cite: 55]</span>
+                <span>Web: www.verdevida.com.ar [cite: 56]</span>
+            </div>
+
+            <div class="experiencia-item">
+                <h3>Ingeniería CAPE S.R.L. (04/2014 - 01/2018) [cite: 63]</h3>
+                <p>Desarrollo de sistema de parquímetros portátiles. Aplicación de escritorio, sitio web de administración y web services para carga de saldo desde sistemas Posnet. Sistema multilenguaje (español/portugués). [cite: 64, 65]</p>
+                <span class="tecnologias">Tecnologías: Visual Studio .NET Win Forms, Web Forms, Web Services, SQL Server, AWS, GIT [cite: 65]</span>
+            </div>
+            
+            <div class="experiencia-item">
+                <h3>Grupo Oleum (10/2021- 12/2022) [cite: 68]</h3>
+                <p>Sistema ERP orientado a estaciones de servicio. [cite: 69]</p>
+                <span class="tecnologias">Tecnologías: VB 6, SQL Server, TFS [cite: 70]</span>
+                <span>Web: www.grupooleum.com.ar [cite: 71]</span>
+            </div>
+            
+            </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Destacados (Bots)</h2>
+
+            <div class="experiencia-item">
+                <h3>WhatsApp Frossi bot (Beta) (12/2024) [cite: 22]</h3>
+                <p>Bot conversacional en desarrollo. [cite: 23]</p>
+                <span class="tecnologias">Tecnologías: C#.NET Core, WhatsApp Business API, Wit.Ai [cite: 25]</span>
+            </div>
+
+            <div class="experiencia-item">
+                <h3>ClanGuruBot (7/2024-9/2024) [cite: 44]</h3>
+                <p>Bot de Telegram para jugadores de Clash Royale, consulta la API del servidor y brinda estadísticas del juego en tiempo real. [cite: 45]</p>
+                <span class="tecnologias">Tecnologías: C#.NET Core, Selenium [cite: 46]</span>
+            </div>
+        </section>
+
+<!-- 
+        <section id="info-adicional">
+            <h2>Información Adicional</h2>
+            <div class="info-adicional">
+                <ul>
+                    <li>Licencia de conducir B2 [cite: 73]</li>
+                    <li>Movilidad propia [cite: 78]</li>
+                </ul>
+            </div>
+        </section>
+        comentario -->
+
+    </div>
+
+</body>
+</html>
